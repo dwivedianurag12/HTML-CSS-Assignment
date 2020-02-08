@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charity donation form</title>
+    <link rel="stylesheet" type="text/css" href="charity.css">
+	<script src="charityvalid.js" ></script>
+</head>
+<body>
+    <div class="xyz">
+
+    <div id="header">
+        <img src="charity.png"  />
+        <h1>Charity Donation Form</h1>
+      </div>
+    <div id ="myForm">
+        <br>
+        
+    <form class ="Form" name="form" method="post" onsubmit="validation()">
+        <label for ="fname" >Full Name</label><br>
+        
+            
+            <input type="text" style="width: 300px;" name= "fname" id="fname" value="" >
+            <input style=" margin-top: 7px;margin-left: 20px; width: 300px;" id ="lname" type="text" value="" name="lname">
+            <br>
+            <table>
+                <tr>
+                    <td style="color: gray;">First name</td>
+                    <td style="padding-left: 255px; color: gray;">Last name</td>
+                </tr>
+            </table>
+        
+        <label  for="email">E-mail</label><br>
+        <input style="width: 627px;margin-top: 1px;" type="email" placeholder="ex:myname@example.com" name="email" id ="email">
+        <br>
+        <br>
+        <label for ="phone">Phone Number</label><br>
+        <input  id="areas" style="width: 240px;" type="number" id ="phone" name="phone">
+        <input id="number"style=" margin-top: 7px;width: 360px; margin-left: 20px;" type="number" name="phone">
+        <br>
+        <table>
+            <tr>
+                <td style="color: gray;" name="areacode">Area Code</td>
+                <td style="padding-left: 193px; color: gray;" name="number">Phone number</td>
+            </tr>
+        </table>
+        <br>
+        <label for ="amt" >Amount</label><br>
+        <input style="margin-top: 7px;"type ="number" id ="amt" name="amt">USD
+        
+        <table>
+            <tr>
+                <td style="color: gray;">Charity Donation</td>
+            </tr>
+        </table>
+        <br>
+        <label for="msg">Message</label><br>
+        <textarea style="width: 627px; border-radius: 5px;margin-top: 7px;" rows="6" cols="58" id="cmt"></textarea>
+        <br>
+        <input type="submit" value="Submit" name="Submit">   
+    </form>if(lname.match(digit)){
+		alert("name has number");
+		return false;
+	}
+    </div>
+    </div>
+</body>
+</html>

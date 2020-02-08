@@ -1,0 +1,50 @@
+
+#ul{
+list_style_type:none;
+margin:-10;
+padding:0;
+background-color:rgba(11,43,102,0.795);
+
+}
+#li{
+display:inline;
+margin:5;
+padding:5;
+color:white;
+}
+
+.foot {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+}
+#h1{
+	padding-left:30px;
+	padding-top:20px;
+}
+#a{
+	float:right;color:yellow;
+	
+	padding-top:15px;
+	padding-right:30px;	
+	margin-right:40px;
+	
+}
+#cart{
+	float:right;
+	color:white;
+	padding-top:15px;
+	padding-right:20px;	
+	margin-right:10px;
+	
+	
+}
+#table{
+	width:100%;
+	padding-left:50px;
+	padding-top:40px;
+	
+	
+}

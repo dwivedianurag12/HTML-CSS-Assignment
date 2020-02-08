@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>change text</title>
+<script>
+
+function change_text()
+{
+var count=document.getElementById("n").value;
+switch(count){
+
+case 1:
+if(count%2!=0)
+var t=document.getElementById("text1").innerHTML="Well done!...";
+console.log(t);
+break;
+
+case 2:
+document.getElementById("text1").innerHTML="Hello!...";
+break;
+
+default:
+document.getElementById("text1").innerHTML="type number";
+
+}
+}
+</script>
+</head><header>
+<body><div><input type="text" id="text1"></div><br>
+
+<div id=""></div><br></header><form>
+<input type="text" id="n" placeholder="enter" ><form>
+<button onclick="change_text()">Click here to change Text</button>
+
+</body>
+</html>

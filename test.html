@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="vali.css">
+<script src="validation.js" type="text/javascript"></script>
+<title>
+Form validation
+</title>
+</head>
+<body class="body">
+<h1 id="h1">Fill Form</h1>
+<form name="form" method="post" onSubmit="validation()">
+<table id="table">
+
+
+<tr><td>
+<label class="label">Name:</label></td><td>
+<input type="text" value="" name="name" placeholder="name" ></td></tr>
+</br><tr><td>
+<label class="label">username:</label></td><td>
+<input type="text" name="username" value=""placeholder="username"></td></tr>
+</br><tr><td>
+<label class="label"> email id:</label></td><td>
+<input type="email" value="" name="email" placeholder="email"></td></tr>
+</br><tr><td>
+<label class="label">Password:</label></td><td>
+<input type="password" value="" name="password" placeholder="password"></td></tr>
+</br><tr><td>
+<label class="label">Confirm Password:</label></td><td>
+<input type="Password" name="cpassword"placeholder="re type password" value=""></td></tr>
+</br>
+<tr><td><label class="label">gender:</label></td><td>
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female</td></tr>
+<tr><td><label class="label">Hobbies:</label></td><td>
+<input type="checkbox" name="cricket" value="cricket">Cricket
+<input type="checkbox" name="chess" value="chess">Chess
+<input type="checkbox" name="football" value="football">Football</td></tr>
+<tr><td>
+<label class="label">city:</label></td><td>
+<select>
+<option name="" value="Lucknow">Lucknow
+<option name="" value="Pune">Pune
+<option name="" value="vizak">Vizak
+</select></td></tr>
+<tr><td>
+<label class="label">Number:</label></td><td>
+<input type="text" name="number"value="" placeholder="mobile number"></td></tr>
+<tr><td>
+<label class="label">Date:</label></td><td>
+<input type="date" value="" name="date"></td></tr>
+</br><tr><td>
+<input type="submit" name="submit" value="submit"></td></tr>
+</table>
+</form>
+<img id="imgg" src="aaa.jpg" height="270px" width="470px" onmouseover="changeimg()" onmouseout="changeimgg()">
+</body>
+</html>

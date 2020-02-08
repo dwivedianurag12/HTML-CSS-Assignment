@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>change text</title>
+<script>
+var count=0;
+function change_text()
+{
+count=count+1;
+var val=document.getElementById("text");
+if(count%2!=0)
+{
+val.innerHTML="Well done!...";
+}
+else
+{
+val.innerHTML="Hello!...";
+}
+
+}
+
+</script>
+</head>
+<body>
+<div id="text"></div><br><br>
+<button onclick="change_text()">Click here to change Text</button>
+
+</body>
+</html>

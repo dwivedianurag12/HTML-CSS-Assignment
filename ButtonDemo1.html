@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>change text</title>
+<script>
+var cnt=0;
+function change_Day()
+{
+
+cnt=parseInt(cnt)+parseInt(1);
+var val=document.getElementById("change");
+if(cnt%7==1)
+{
+val.innerHTML="Monday";
+}
+else if(cnt%7==2)
+{
+val.innerHTML="Tuesday";
+}
+else if(cnt%7==3)
+{
+val.innerHTML="Wednesday";
+}
+else if(cnt%7==4)
+{
+val.innerHTML="Thursday";
+}
+else if(cnt%7==5)
+{
+val.innerHTML="Friday";
+}else if(cnt%7==6)
+{
+val.innerHTML="Saturday";
+}
+else if(cnt%7==0)
+{
+val.innerHTML="Sunday";
+}
+}
+</script>
+</head>
+<body>
+<div id="change">Days</div><br><br>
+<button onclick="change_Day()">Click here</button>
+</body>
+</html>

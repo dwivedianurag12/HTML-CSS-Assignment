@@ -1,0 +1,41 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add and Delete List</title>
+</head>
+<body>
+
+    <ul id="list"></ul>
+
+    <input type="text" id="candidate"/><br><br>
+    <button onclick="addItem()">add item</button>
+    <button onclick="removeItem()">Delete item</button>
+
+    <script>
+    function addItem(){
+    var ul = document.getElementById("list");
+    var candidate = document.getElementById("candidate");
+    var li = document.createElement("li");
+    li.setAttribute('id',candidate.value);
+	if(candidate.value == ""){
+	alert("no string");
+	return false; }
+    li.appendChild(document.createTextNode(candidate.value));
+	
+    ul.appendChild(li);
+	
+         document.getElementById('candidate').value = '';
+        
+}
+
+function removeItem(){
+    var ul = document.getElementById("list");
+    var candidate = document.getElementById("candidate");
+    var item = document.getElementById(candidate.value);
+    ul.removeChild(item);
+    document.getElementById('candidate').value = '';
+}
+    </script>
+    </body>
+    </html>

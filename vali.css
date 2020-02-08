@@ -1,0 +1,21 @@
+#h1{
+color:red;
+font-size:24px;
+float:left;
+align:center;
+}
+
+.body{
+background-color:#b19cd9;
+padding:10px;
+
+}
+#table{
+padding:10px;
+color=blue;
+}
+
+.label{
+	color:yellow;
+	font-weight:20px;
+}

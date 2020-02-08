@@ -1,0 +1,114 @@
+<html>
+<head><title>Action page</title>
+<style>
+ul{
+list_style_type:none;
+margin:-10;
+padding:0;
+background-color:rgba(11,43,102,0.795);
+}
+li{
+display:inline;
+margin:5;
+padding:5;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+}
+.button {
+  background-color: rgba(11,43,102,0.795);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+</style>
+<script>
+function validation() {
+  var x = document.forms["Form"]["name"].value;
+  var z = x.length;
+  var rx =  /^[A-za-z0-9 ]+&/
+  
+  if (x == "") {
+    alert("Name must be filled out");
+ return false;
+	 }
+	 var isvalid=rx.test(document.getElementById("name").value);
+	if(!isvalid){
+	alert("Name has special characters");
+	return false;
+	}
+	 if (z>62 || z<2)
+	{alert("Name length should between 2 to 30 characters");
+	  return false;
+	 }
+   var y = document.forms["Form"]["price"].value;
+  if (y == "") {
+    alert("price cannot be empty");
+ return false;
+  }
+   if(!y.match(/^\d+/))
+        {
+        alert("enter numeric chararacters)");
+		   return false;
+		
+        }
+  var dol=document.forms["Forms"]["dol"].value;
+   if(dol=="")
+  { alert("date of launch is required");
+  return false;
+    
+  } 
+  
+}
+</script>
+</head>
+<body>
+<header id="c">
+<ul>
+<li style="color:white;padding-left:10px; padding-top:3px;"><b >truYum</b></li>
+<li><img src="FK.png" height="50"  width="50"></li>
+<li ><a href="edit.html"  >menu</a><br>
+</ul>
+</header>
+<h1 style "padding-left:40;"> Edit Menu Item</h1>
+<form name="Form" style="padding-left:40px;" onsubmit="return validation()"  action="hf.html">
+<label for="name" >Name</label><br>
+<input type="text" name="name" value="" size="80" id="name">
+<br><br>
+<label for="price">Price (Rs.)</label> 
+<label for="act" style="margin-left:130px;">Active</label>
+<label for="dol" style="margin-left:65px;">Date of Launch</label>
+<label for="cat" style="margin-left:90px;">Category</label>
+<br>
+<input align="right" type="text" value="" name="price" id="price" >
+<input id="act" style="margin-left:28px;" type="radio" name="Active" value="Yes" checked>Yes
+<input  type="radio" name="Active" value="No" >No
+<input id="dol" style="margin-left:23px;" type="date" value="dd/mm/yyyy" name="dol">
+
+<select  id="cat" style="margin-left:15px;" >
+  <option value="Main Course">Main Course</option>
+  <option value="Starters">Starters</option>
+  <option value="Dessert">Dessert</option>
+  <option value="Drinks">Drinks</option>
+</select> 
+<br><br>
+ <input type="checkbox" name="Free Delivery" value="Free Delivery" checked> Free Delivery<br>
+ <br>
+ <input class="button" type="submit" value="Save" name="save"  >
+</form>
+<div class="footer">
+  <p>copyright @ 2019</p>
+</div>
+</body>
+</html> 

@@ -1,0 +1,49 @@
+<html>
+<head><title>Email validation</title>
+<script>
+function validate(){
+var e=document.getElementById("email").value;
+var p=document.getElementById("password").value;
+ var lowerCaseLetters = /[a-z]/g;
+ var upperCaseLetters = /[A-Z]/g;
+  var digits = /[0-9]/g;
+  var check=e.endsWith(".com");
+if(e==""){
+alert("enter email id");
+return false;
+}if(p==""){
+alert("Password missing");
+return false;
+}if(p.length<8)
+{alert("Weak password less than 8 word");
+return false;
+}if(!p.match(lowerCaseLetters)){
+alert("WEAK Password : no lower case value");
+return false;
+}if(!p.match(upperCaseLetters)){
+alert("WEAK Password : no lower case value");
+return false;
+}if(check==false){
+alert("email ends with .com ");
+return false;
+}if(!p.match(digits)){
+alert("WEAK Password : no digits");
+return false;}
+ }
+
+
+</script>
+</head>
+<body><form name="form" method="post" >
+<table><tr><td>
+<label for="email">Email:</label></td>
+<td><input id="email" type="email" value="" name="email" ></td></tr>
+<tr><td><label for="password">Password:</label></td>
+<td><input type="password" value="" name="password" id="password"></td></tr>
+
+<tr><td></td><td>
+<input type="submit" value="submit" onclick="validate()"></td></tr>
+</table>
+</form>
+</body>
+</html>
